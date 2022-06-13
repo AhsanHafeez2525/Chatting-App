@@ -9,7 +9,7 @@ import app from '../firebase'
 import { async } from '@firebase/util';
 
 const ChatScreen = (props) => {
-
+    console.log(props)
     const db = getFirestore(app)
 
     const auth = getAuth()
@@ -29,7 +29,8 @@ const ChatScreen = (props) => {
         try {
             let res = await addDoc(collection(db, "Chat"), {
                 msg: msg,
-                msgFrom: auth.currentUser.email
+                msgFrom: auth.currentUser.email,
+                timeStamp: new Date()
             })
             setMsg('')
         } catch (e) {
@@ -97,7 +98,7 @@ const ChatScreen = (props) => {
             />
             <View style={{
                 flexDirection: 'row',
-                
+
             }}>
                 <View style={{ flexDirection: 'row' }}>
                     <TextInput
@@ -126,7 +127,7 @@ const ChatScreen = (props) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent:'space-between'
+        justifyContent: 'space-between'
     },
     msgField: {
         margin: 5,
