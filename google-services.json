@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "145583590677",
+    "project_id": "erozgar-training-app",
+    "storage_bucket": "erozgar-training-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145583590677:android:92b8beee8f3d5070d72d1c",
+        "android_client_info": {
+          "package_name": "com.ahamd.ERozgarFirstApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145583590677-p82cfrub2ksrnfr5ubkpfbvjnnr4c8g1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbBa_ZPIACPWCrmA-6h8IX_7j0akidDzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145583590677-p82cfrub2ksrnfr5ubkpfbvjnnr4c8g1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

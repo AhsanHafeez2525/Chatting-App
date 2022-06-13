@@ -1,5 +1,19 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-ads-admob",
+        {
+          "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ]
+    ],
     "name": "ERozgarFirstApp",
     "slug": "ERozgarFirstApp",
     "version": "1.0.0",
@@ -17,16 +31,37 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The app accesses your photos to let you share them with your friends.",
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-2666489744437932~2470108919"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-2666489744437932~2346480672"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.ahamd.ERozgarFirstApp",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     }
-  }
+  },
+  "android.config.googleMaps.apiKey": "AIzaSyAeCgORv0PluH6w-5B1Lf9EyAX2c6ALskA",
+  "ios.config.googleMapsApiKey": "AIzaSyAeCgORv0PluH6w-5B1Lf9EyAX2c6ALskA"
 }
