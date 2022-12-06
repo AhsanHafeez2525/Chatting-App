@@ -15,6 +15,8 @@ import ViewUsers from './screens/ViewUsers';
 import ForgetPassword from './screens/ForgetPassword';
 import MapScreen from './screens/MapScreen';
 import ChatScreen from './screens/ChatScreen';
+import IndividualChatScreen from './screens/IndividualChatScreen';
+import UsersList from './screens/UsersList';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,7 +33,9 @@ function App() {
         <Stack.Screen name="View Users" component={ViewUsers} />
         <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
         <Stack.Screen name="Maps" component={MapScreen} />
-        <Stack.Screen name="Chat" component={ChatScreen} />
+        <Stack.Screen name="Users" component={UsersList} />
+        <Stack.Screen name="IndividualChatScreen" component={IndividualChatScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -88,6 +88,10 @@ const MainScreen = (props) => {
                 title='Group Chat'
                 onPress={() => props.navigation.navigate('Chat')}
             />
+             <Button
+                title='Individual Chat'
+                onPress={() => props.navigation.navigate('Users')}
+            />
             {/* <PDFReader
                 customStyle={{ width: '100%', height: 500 }}
                 style={{ width: '100%', height: 500 }}
